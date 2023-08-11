@@ -15,20 +15,54 @@
 
 // console.log(a);
 
-let a = 10;
-console.log("line number 2", a);
+// let a = 10;
+// console.log("line number 2", a);
+// function fn() {
+//     console.log("line number 4", a);
+//     let a = 20;
+//     console.log("line number 4", a);
+//     a++;
+//     console.log("line number 7", a);
+//     if (a) {
+//         let a = 30;
+//         a++;
+//         console.log("line number 11", a);
+//     }
+//     console.log("line number 13", a);
+// }
+// fn();
+// console.log("line number 16", a);
+
+
+
+//scope of var is function
+
+// var a = 10;
+
+// {
+//     var a =20;
+// }
+// function fn(){
+//     var a = 20;
+// }
+// fn();
+
+// console.log(a);
+
+var a = 10;
+// console.log("line number 2", a);
 function fn() {
-    console.log("line number 4", a);
-    let a = 20;
+    // console.log("line number 4", a);
+    var a = 20;
     console.log("line number 4", a);
     a++;
-    console.log("line number 7", a);
+    // console.log("line number 7", a);
     if (a) {
-        let a = 30;
+        var a = 30;
         a++;
         console.log("line number 11", a);
     }
     console.log("line number 13", a);
 }
 fn();
-console.log("line number 16", a);
+// console.log("line number 16", a);
